@@ -11,24 +11,15 @@ public class Work2 {
     public static void main(String[] args) {
 
         int[][] mat = MatrixUtils.genMatrix(3, 3);
+        System.out.println(MatrixUtils.toString(mat));
 
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {
-
-                int rand = ArrayUtils.getRandomNum(100);
-                System.out.print(rand + "  - ");
-
-                if (rand % 5 == 0) {
-                    rand = 8;
-                }
-                mat[i][j] = rand;
+                mat[i][j] = mat[i][j] % 5 == 0 ? 8 : mat[i][j];
             }
         }
 
-        String s = MatrixUtils.toString(mat);
-        System.out.println(s);
-
-
+        System.out.println(MatrixUtils.toString(mat));
     }
 
 }

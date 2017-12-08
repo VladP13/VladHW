@@ -6,7 +6,7 @@ import ua.artocde.method.ArrayUtils;
 public class Work10 {
     public static void main(String[] args) {
 
-        int[] mas = ArrayUtils.generateMas(5, 10);
+        int[] mas = ArrayUtils.generateMas(7, 10);
 
         ArrayUtils.printArr(mas);
 
@@ -19,8 +19,8 @@ public class Work10 {
               mas[mas.length - 1 - i] = temp;
          }
 
-         mas[3] = two;
-         mas[4] = one;
+         /*mas[3] = two;
+         mas[4] = one;*/
 
          ArrayUtils.printArr(mas);
     }

@@ -17,7 +17,7 @@ public class Work16 {
                 break;
             } else if (number % 2 == 0) {
                 ostacha += 0;
-            } else if (number % 2 == 1) {
+            } else if (number % 2 != 0) {
                 ostacha += 1;
             }
             number /= 2;

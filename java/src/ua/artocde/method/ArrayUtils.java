@@ -106,9 +106,9 @@ public class ArrayUtils {
     public static int[] moveArrayRight(int[]mas,int move){
         if(mas != null){
             for (int i = 0; i < move ; i++) {
-                int tmp = mas[mas.length - 1] ;
+                int tmp = mas[mas.length - 1];//сохряняєм останній елемент
                 for (int j = mas.length -1; j > 0; j--) {
-                    mas[j] = mas[j-1];
+                    mas[j] = mas[j - 1];
                 }
                 mas [0] = tmp;
 

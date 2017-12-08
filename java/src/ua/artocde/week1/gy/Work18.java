@@ -20,7 +20,8 @@ public class Work18 {
         int numb = 0;
 
         for (int i = 0; i < number; i++) {
-          numb += i == 8? 1 : 0;
+            numb += number % 10 == 8 ? 1 : 0;
+            number /= 10;
         }
         System.out.println("The number 8 repeats " + numb);
 

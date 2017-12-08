@@ -13,14 +13,12 @@ public class Work1 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println(" enter matrix tapes? ");
-        ;
         int tapes = sc.nextInt();
         System.out.println(" enter matrix columns");
         int columns = sc.nextInt();
 
         int[][] matrix = MatrixUtils.genMatrix(tapes, columns);
 
-        String s = MatrixUtils.toString(matrix);
-        System.out.println(s);
+        System.out.println(MatrixUtils.toString(matrix));
     }
 }
